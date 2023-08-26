@@ -1,10 +1,11 @@
 import mysql.connector
 import datetime
-def getavailable_usernames(username,logfile):
+
+def getavailable_usernames(username,logfile,mysql_host,mysql_user,mysql_password,mysql_db):
     log_file = open(logfile,'a+')
     return_value = False
-    mydb = mysql.connector.connect(host="0.0.0.0", user="username", passwd="password",
-                                   database="dbname", charset="utf8")
+    mydb = mysql.connector.connect(host=mysql_host, user=mysql_user, passwd=mysql_password,
+                                   database=mysql_db, charset="utf8")
     mycursor = mydb.cursor()
     sql = "select username from username where username like '%" + username +"%';"
     mycursor.execute(sql)

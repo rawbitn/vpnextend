@@ -1,4 +1,4 @@
-This solution is implemented for Huawei Eudemon1000E Firewall series where the user activation can be done using GUI or CLI.
+This solution is implemented for Huawei Eudemon1000E Firewall series where the user activation can be done using GUI or CLI and user authentication happens with a FreeRADIUS server with MySQL DB . For each user, a static IP is configured in the Database and it will send to the Firewall with radius reply.
 
 Following steps explains how to use this programme.
 
