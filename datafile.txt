@@ -1,1 +1,2 @@
-username	2023/01/01
+username1	YYYY/MM/DD
+username2 YYYY/MM/DD
