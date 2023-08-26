@@ -1,2 +1,2 @@
-username1	YYYY/MM/DD
+username1 YYYY/MM/DD
 username2 YYYY/MM/DD
